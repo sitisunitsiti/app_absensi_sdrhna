@@ -1,3 +1,8 @@
+<?php
+include "koneksi.php";
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -26,6 +31,9 @@
 						<li class="nav-item">
 							<a class="nav-link text-white fw-bold" href="dashboard.php?page=kehadiran">Kehadiran</a>
 						</li>
+						<li class="nav-item">
+
+							<a class="nav-link text-white fw-bold" href="login.php">Logout</a>
 					</ul>
 				</div>
 			</div>
@@ -56,6 +64,9 @@
 									break;
 								case 'kehadiran':
 									include "page/Kehadiran.php";
+									break;
+								case 'logout':
+									include "page/logout.php";
 									break;
 
 								default:
